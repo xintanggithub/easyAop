@@ -1,0 +1,2 @@
+rootProject.name = "easyAop"
+include ':app'
