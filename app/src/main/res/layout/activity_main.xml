@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="请结合代码以及输出日志熟悉AOP简单运用"
+        android:textColor="#F12B2B" />
+
+    <Button
+        android:id="@+id/aop1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="日志插桩" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/run1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线程切换" />
+
+    <Button
+        android:id="@+id/lock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加锁" />
+
+    <Button
+        android:id="@+id/auto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义参数[可以统一拦截方法执行前执行后]" />
+
+    <Button
+        android:id="@+id/auto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="权限验证" />
+
+</LinearLayout>
